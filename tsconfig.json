@@ -18,7 +18,7 @@
     "rootDir": "src",
     "baseUrl": "src"
   },
-  "include": ["src"],
+  "include": ["src", "*.config.js"],
   "path": {
     "components": "./src/components",
     "containers": "./src/containers",
