@@ -19,6 +19,7 @@
     "baseUrl": "src"
   },
   "include": ["src", "*.config.js"],
+  "exclude": ["logger.ts"],
   "path": {
     "components": "./src/components",
     "containers": "./src/containers",
