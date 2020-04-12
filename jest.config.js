@@ -3,10 +3,12 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
   moduleNameMapper: {
-    '^components(.*)$': '<rootDir>/src/components$1',
-    '^containers(.*)$': '<rootDir>/src/containers$1',
-    '^stores(.*)$': '<rootDir>/src/stores$1',
-    '^styled-components(.*)$': '<rootDir>/src/styled-component$1',
+    '^components(.*)$': '<rootDir>/components$1',
+    '^containers(.*)$': '<rootDir>/containers$1',
+    '^stores(.*)$': '<rootDir>/stores$1',
+    '^styled-components(.*)$': '<rootDir>/styled-component$1',
+    '^types(.*)$': '<rootDir>/types',
+    '^utils(.*)$': '<rootDir>/utils',
   },
   setupFilesAfterEnv: ['./src/setupTests.ts'],
 }
