@@ -24,7 +24,12 @@
   },
   "rules": {
     "no-param-reassign": "warn",
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "@typescript-eslint/indent": "off",
     "@typescript-eslint/member-delimiter-style": [
       "warn",
@@ -53,6 +58,9 @@
     "import/no-cycle": "warn",
     "import/prefer-default-export": "off",
     "react/button-has-type": "warn",
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off"
   }
 }
