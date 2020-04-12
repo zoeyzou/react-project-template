@@ -2,7 +2,7 @@ This is my react project template set up with `create react app` and its `redux-
 
 ## Structure
 
-This template adopts `ducks` structure approach for modularity purpose, see ref: https://github.com/erikras/ducks-modular-redux.
+This react redux template adopts `ducks` pattern, see ref: https://github.com/erikras/ducks-modular-redux.
 The folders are structured as below:
 
 ```
