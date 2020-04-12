@@ -2,7 +2,7 @@ This is my react project template set up with `create react app` and its `redux-
 
 ## Structure
 
-This react redux template adopts `ducks` pattern, see ref: https://github.com/erikras/ducks-modular-redux.
+This react redux template adopts `ducks` pattern, see ref: https://github.com/erikras/ducks-modular-redux. Also, style guide coming from redux starter kit should be followed, see ref: https://redux-toolkit.js.org/
 The folders are structured as below:
 
 ```
@@ -30,6 +30,8 @@ The folders are structured as below:
     │       ├── thunks.ts
     │       ├── selector.ts
     │       ├── constants.ts
+    │       ├── types.ts
+    │       ├── feature-a.test.ts (test all store item: reducers, selectors, actions etc)
     │       └── api.ts
     ├── styled-components
     │   ├── theme.ts
