@@ -1,4 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is my react project template set up with `create react app` and its `redux-typescript` template; added with `eslint` & `prettier` for linting and formating, `jest dom` and `jest axe` for testing, `styled-components` for styling, `storybook` with its various add-ons for component developing.
+
+## Structure
+
+This template adopts `ducks` structure approach for modularity purpose, see ref: https://github.com/erikras/ducks-modular-redux.
+The folders are structured as below:
+
+```
+├── .storybook
+└── src
+    ├── components
+    │   └── my-component
+    │       ├── my-component.stories.tsx
+    │       ├── my-component.test.tsx
+    │       ├── my-component.styles.tsx
+    │       ├── index.tsx (where the component lives)
+    │       └── utils
+    │           ├── helpers.ts
+    │           └── helpers.test.ts
+    ├── containers
+    │   └── feature-a
+    │       ├── components
+    │       │   └── feature-a-component.tsx
+    │       ├── feature-a.styles.tsx
+    │       └── index.tsx
+    ├── stores
+    │   ├── store.ts
+    │   └── feature-a
+    │       ├── slice.ts
+    │       ├── thunks.ts
+    │       ├── selector.ts
+    │       ├── constants.ts
+    │       └── api.ts
+    ├── styled-components
+    │   ├── theme.ts
+    │   ├── global-styles.ts
+    │   └── styled.d.ts (override styled component type)
+    ├── types (global types)
+    └── utils (pure functions as global helpers)
+```
+
+Note that the project is set up with `husky` and `lint-staged` do every commit needs to pass linting and formatting rules.
 
 ## Available Scripts
 
@@ -27,18 +68,18 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run storybook`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Builds the storybook for all the stories, can be used to develop components in isolation.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm run build-storybook`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Useful for deploying storybook individually.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `npm prettier`
 
-## Learn More
+Manually fix formatting issues for all files. Incuded in the lint-staged setting.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `npm lint`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Manually lint for all files. Included in the lint-staged setting.
