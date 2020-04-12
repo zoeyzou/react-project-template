@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment, incrementByAmount, incrementAsync } from 'stores/counter/slice'
 import { selectCount } from 'stores/counter/selectors'
 import { Button } from 'components/button'
-import * as s from './styles'
+import * as s from './counter.styles'
 
 export const Counter: FC = () => {
   const count = useSelector(selectCount)

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as s from './styles'
+import * as s from './button.styles'
 
 export interface Props extends React.ComponentPropsWithRef<'button'> {
   ariaLabel?: string
